@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="@string/empty"/>
+
+    <TextView
+        android:text="@string/A"/>
+
+    <TextView
+        android:text="@string/B"/>
+
+    <TextView
+        android:text="@string/C"/>
+
+    <TextView
+        android:text="@string/D"/>
+
+    <TextView
+        android:text="@string/E"/>
+
+    <TextView
+        android:text="@string/F"/>
+
+    <TextView
+        android:text="@string/G"/>
+
+    <TextView
+        android:text="@string/H"/>
+
+    <TextView
+        android:text="@string/I"/>
+
+    <TextView
+        android:text="@string/J"/>
+
+</merge>

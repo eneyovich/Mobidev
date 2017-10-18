@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Mobidev Battleship</string>
+
+    <!--horizontal letters-->
+    <string name="empty"> </string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+    <string name="D">D</string>
+    <string name="E">E</string>
+    <string name="F">F</string>
+    <string name="G">G</string>
+    <string name="H">H</string>
+    <string name="I">I</string>
+    <string name="J">J</string>
+
+    <!--vertical numbers-->
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="number_7">7</string>
+    <string name="number_8">8</string>
+    <string name="number_9">9</string>
+    <string name="number_10">10</string>
+
+    <!--button's text-->
+    <string name="refresh">REFRESH</string>
+
+    <!--exit item in menu-->
+    <string name="exit">exit</string>
+
+</resources>
