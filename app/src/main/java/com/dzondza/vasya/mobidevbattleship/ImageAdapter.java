@@ -6,17 +6,20 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.dzondza.vasya.mobidevbattleship.Presenter.PresenterImpl;
+import com.dzondza.vasya.mobidevbattleship.Presenter.Presenter;
+
 /**
  * Adapter for GridView, that is field for ships
  */
 
 public class ImageAdapter extends BaseAdapter {
-    private Context mContext;
-    private FieldCreation mFieldCreation = new FieldCreation();
+    private final Context mContext;
 
-    private int[] finishedField = mFieldCreation.finalField();
+    private final Presenter mPresenter = new PresenterImpl();
+    private final int[] finishedField = mPresenter.getFieldWithShips();
 
-    ImageAdapter(Context c) {
+    public ImageAdapter(Context c) {
         mContext = c;
     }
 

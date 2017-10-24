@@ -1,5 +1,8 @@
 package com.dzondza.vasya.mobidevbattleship;
 
+import com.dzondza.vasya.mobidevbattleship.Presenter.Presenter;
+import com.dzondza.vasya.mobidevbattleship.Presenter.PresenterImpl;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -16,23 +19,10 @@ public class MyUnitTests {
         assertEquals(4, 2 + 2);
     }
 
-//    @Test
-//    public void isCorrectPosition() {
-//        FieldCreation fieldCreation = new FieldCreation();
-//        int[] newField = fieldCreation.createNewField();
-//
-//        assertEquals(true, fieldCreation.isAvailablePlace(1, newField));
-//        assertEquals(true, fieldCreation.isAvailablePlace(85, newField));
-//        assertEquals(true, fieldCreation.isAvailablePlace(99, newField));
-//        assertEquals(true, fieldCreation.isAvailablePlace(7, newField));
-//    }
-//
-//    @Test(expected = IndexOutOfBoundsException.class)
-//    public void isWrongPosition() {
-//        FieldCreation fieldCreation = new FieldCreation();
-//        int[] newField = fieldCreation.createNewField();
-//
-//        fieldCreation.isAvailablePlace(-1, newField);
-//        fieldCreation.isAvailablePlace(100, newField);
-//    }
+    @Test
+    public void isCorrectLength() {
+        Presenter presenter = new PresenterImpl();
+        int fieldLength = presenter.getFieldWithShips().length;
+        assertEquals(100, fieldLength);
+    }
 }
