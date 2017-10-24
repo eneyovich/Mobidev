@@ -31,7 +31,7 @@ class FewDeckerShips {
                 firstDeckPosition = LINE_LENGTH * randomLocation.nextInt(LINE_LENGTH - decksNumber) + randomLocation.nextInt(LAST_IN_LINE);
             }
 
-            //checks available place for HORIZONTAL or VERTICAL i-decker ships
+            //checks available place for HORIZONTAL or VERTICAL (i+1)-decker ships
             for (int i = 0; i < decksNumber; i++) {
                 if (isHorizontal) {
                     isAnyAvailablePlaceForShip = isAnyAvailablePlaceForShip && mPresenter.isAvailablePlace(firstDeckPosition + i, field);
